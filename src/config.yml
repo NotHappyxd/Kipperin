@@ -1,0 +1,46 @@
+scoreboard-title: '&a&lHCF &c[Map 1]'
+map-number: 1
+timezone: 'EST'
+kitmap: false
+teamspeak: 'ts.kipperin.club'
+disable-enderchest: true
+expMultiplier:
+  # The multipliers to set for experience, set to 1.0 to normalise as vanilla.
+  global: 2.0
+  fishing: 2.0
+  smelting: 2.0
+  lootingPerLevel: 1.5
+  luckPerLevel: 1.5
+  fortunePerLevel: 1.5
+enchantment-limits:
+  PROTECTION_ENVIRONMENTAL: 3
+  PROTECTION_FIRE: 3
+  SILK_TOUCH: 1
+  DURABILITY: 3
+  PROTECTION_EXPLOSIONS: 3
+  LOOT_BONUS_BLOCKS: 3
+  PROTECTION_PROJECTILE: 3
+  OXYGEN: 3
+  WATER_WORKER: 1
+  THORNS: 0
+  DAMAGE_ALL: 3
+  ARROW_KNOCKBACK: 1
+  KNOCKBACK: 1
+  FIRE_ASPECT: 1
+  LOOT_BONUS_MOBS: 3
+  LUCK: 3
+  LURE: 3
+potionLimits:
+  STRENGTH: 0
+  INVISIBILITY: 0
+  REGEN: 0
+  WEAKNESS: 0
+  INSTANT_DAMAGE: 0
+  SLOWNESS: 1
+  POISON: 1
+max-members: 25
+max-allies: 1
+disable-negative-points: false
+timers:
+  # in seconds. Ex. Enderpearl: 15 15 seconds is the the delay
+  Enderpearl: 15
