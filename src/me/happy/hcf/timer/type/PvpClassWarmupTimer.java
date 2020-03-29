@@ -13,7 +13,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.inventory.EquipmentSetEvent;
+import org.bukkit.event.inventory.EquiptSetEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -90,7 +90,7 @@ public class PvpClassWarmupTimer extends PlayerTimer implements Listener {
     }
 
     @EventHandler(ignoreCancelled = true, priority = EventPriority.MONITOR)
-    public void onEquipmentSet(EquipmentSetEvent event) {
+    public void onEquipmentSet(EquiptSetEvent event) {
         HumanEntity humanEntity = event.getHumanEntity();
         if (humanEntity instanceof Player) {
             attemptEquip((Player) humanEntity);

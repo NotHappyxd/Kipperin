@@ -1,6 +1,5 @@
 package me.happy.hcf.pvpclass.ghost;
 
-import me.cuzimyeti.entity.PotionEffectAddEvent;
 import me.happy.hcf.pvpclass.PvpClass;
 import net.minecraft.server.v1_8_R3.PacketPlayOutEntityEquipment;
 import org.bukkit.Bukkit;
@@ -9,6 +8,7 @@ import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PotionEffectAddEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.potion.PotionEffectType;

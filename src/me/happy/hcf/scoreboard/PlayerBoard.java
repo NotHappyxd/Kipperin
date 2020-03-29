@@ -25,6 +25,7 @@ public class PlayerBoard {
     private final Team neutrals;
     private final Team allies;
     private final Team archers;
+    private final Team invis;
     private final BufferedObjective bufferedObjective;
     @Getter
     private final Scoreboard scoreboard;
@@ -58,6 +59,9 @@ public class PlayerBoard {
 
         this.archers = scoreboard.registerNewTeam("archers");
         this.archers.setPrefix(ChatColor.DARK_RED.toString());
+
+        this.invis = scoreboard.registerNewTeam("invis");
+        this.invis.setCanSeeFriendlyInvisibles(true);
         player.setScoreboard(this.scoreboard);
     }
 
@@ -200,6 +204,10 @@ public class PlayerBoard {
                         allies.addPlayer(update);
                     } else {
                         neutrals.addPlayer(update);
+                    }
+
+                    if (player.hasPotionEffect(PotionEffectType.INVISIBILITY)) {
+                        invis.addPlayer(update);
                     }
                 }
             }
