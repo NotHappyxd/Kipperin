@@ -159,7 +159,7 @@ public class HCF extends JavaPlugin {
 
         HCF.plugin = this;
         DateTimeFormats.reload(ConfigurationService.SERVER_TIME_ZONE);        // Initialise the static fields.
-        ///////////////////////////
+
         Plugin wep = getServer().getPluginManager().getPlugin("WorldEdit");  // Initialise WorldEdit hook.
         worldEdit = wep instanceof WorldEditPlugin && wep.isEnabled() ? (WorldEditPlugin) wep : null;
 
